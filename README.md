@@ -80,6 +80,19 @@ This project demonstrates the path forward:
 - [ai-hype-auditing](https://github.com/andiekobbietks/ai-hype-auditing): forensic methodology for auditing AI claims
 - [sovereign-edge-ai-research](https://github.com/andiekobbietks/sovereign-edge-ai-research): research portfolio connecting all threads
 
+## Sources and references
+
+- Better Stack: "Running a 28.9M parameter LLM on an $8 ESP32" (YouTube) — per-layer embeddings, TinyStories, llama2.c blueprint
+- Cisco Networking Academy: Industrial Networking Essentials, Industrial IoT and Control Systems, Industrial Cybersecurity Essentials
+- Cisco CML-Free: Cisco Modeling Labs free tier (up to 5 IOS nodes)
+- Cisco DevNet Sandbox: free cloud-hosted Cisco industrial gear
+- Cisco Cyber Vision: deep packet inspection for industrial protocols
+- John Capobianco (automateyournetwork): pyATS + AI network automation
+- akramIOT (Cisco_Edge_Intelligence): OPC UA, Modbus, MQTT to Azure IoT Hub
+- Sparty-5A (cisco-nso-orchestration): DevNet Sandbox, Infrastructure-as-Code
+- nickrusso42518 (cisco-etech): technical documentation and IoT demos
+- CiscoDevNet (industrial-netdevops): Industrial NetDevOps workflows
+
 ## License
 
 Project code: MIT. Cisco configurations and topologies: for educational use. Hardware: see manufacturer licenses.
