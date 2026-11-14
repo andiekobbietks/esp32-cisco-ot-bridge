@@ -1,5 +1,15 @@
 # ESP32 + Cisco OT/IT Bridge: Industry 4.0 Edge Computing
 
+## Origin
+
+This project grew out of a conversation about the Weight-Space Programming (WSP) findings. The key insight from WSP was that frontier LLMs compile logic into sparse integer matrices (95%+ zeros) that can run on bare metal with sub-millisecond latency. The natural question: where does that matter?
+
+The answer was Industry 4.0. The original 2011 vision promised smart factories with intelligent sensors on every machine. Instead, the industry got "Pilot Purgatory": cloud-dependent sensors, no runtime on microcontrollers, and OT/IT security walls. Factories run on 30-year-old PLCs with 1970s ladder logic. You cannot deploy Python or PyTorch on a $5 microcontroller.
+
+This project bridges that gap: use LLMs offline to compile industrial safety rules and anomaly detection into tiny sparse matrices, flash them onto $8 ESP32-S3 chips, and connect them to real Cisco industrial networking infrastructure (CML-Free, IOL switches, ASAv firewalls) through legacy protocols (Modbus, PROFINET, OPC UA). The result is air-gapped, sub-millisecond edge intelligence that talks to 30-year-old machinery without replacing it.
+
+The Cisco Networking Academy Industrial OT track (Industrial Networking Essentials, IIoT Control Systems, Industrial Cybersecurity) provides the protocol knowledge. The ESP32 provides the hardware. The WSP research provides the compilation technique.
+
 ## What is this?
 
 A proof-of-concept project bridging a physical $8 ESP32-S3 microcontroller to real Cisco industrial networking infrastructure. The goal: demonstrate that bare-metal edge AI (compiled logic in sparse integer matrices) can run on microcontrollers and communicate securely through legacy industrial protocols (Modbus, PROFINET, OPC UA) into modern SCADA/IoT dashboards.
